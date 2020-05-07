@@ -214,11 +214,13 @@ h6,
 
 .action-button {
     font-size: 28px;
-    font-weight: 700;
+    font-weight: 400;
+    line-height: 1;
     color: #ffffff;
     background-color: #ff7473;
-    box-shadow: ;
-    padding: 2.2rem 4.0rem;
+    box-shadow: 0 1px 0 rgba(136, 136, 136, 0.5);
+    padding: 2.1rem 3.8rem;
+    border-radius: 2px;
 }
 
 .secondary-button {
@@ -243,6 +245,7 @@ h6,
     background-color: #f3f3f3;
 }
 
+a,
 a:hover,
 a:focus {
     text-decoration: none;
@@ -265,30 +268,64 @@ a:focus {
 .header {
     background-color: #47b8e0;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 108px;
+}
+
+.header-container {
+    max-width: 1000px;
+    padding: 0 15px;
 }
 
 .header__company-info {
+    max-width: 970px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 40px;
+}
+
+.header__contacts {
+    display: flex;
+}
+
+.header__phone,
+.header__chat {
+    display: flex;
+    align-items: center;
+}
+
+.header__phone {
+    padding-right: 85px;
+}
+
+.phone-icon {
+    height: 26px;
+    padding-right: 10px;
+}
+
+.chat-icon {
+    height: 29px;
+    padding-right: 10px;
 }
 
 .header__white-text {
     color: #ffffff;
     font-size: 1.8rem;
     font-weight: 700;
+    text-align: left;
 }
 
 .header__black-text {
     color: #000000;
     font-size: 1.2rem;
+    text-align: left;
 }
 
 .header-slogan-wrapper {
     align-items: center;
-    display: flex;
     justify-content: center;
     padding: 9.8rem 0 4.8rem;
     text-align: center;
@@ -297,6 +334,6 @@ a:focus {
 .header-slogan {
     font-size: 36px;
     font-weight: 700;
-    color: #ffc952;
-    border: 1px solid #ffffff;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000;
 }
