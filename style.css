@@ -30,6 +30,8 @@ with others.
 	2. 	Element Base
 	3. 	Helper Classes
   4. 	Site Header
+  5.  Menu
+  6.  Its simple section
   
 
 /* -------------------------------------------------------------------------- */
@@ -46,6 +48,7 @@ body {
     border: none;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 h1,
@@ -64,9 +67,6 @@ em,
 font,
 img,
 small,
-strike,
-sub,
-sup,
 li,
 ol,
 ul,
@@ -172,6 +172,82 @@ path {
 /*	2. Element Base 
 /* -------------------------------------------------------------------------- */
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.big-text {
+    font-weight: 300;
+}
+
+h2,
+.heading-size-2 {
+    font-size: 4.2rem;
+    color: #4a4946;
+}
+
+h3,
+.heading-size-3 {
+    font-size: 3.8rem;
+    color: #4f4f4f;
+}
+
+h4,
+.heading-size-4 {
+    font-size: 3.6rem;
+    color: #4f4f4f;
+}
+
+h5,
+.heading-size-5 {
+    font-size: 2.4rem;
+    color: #4f4f4f;
+}
+
+h6,
+.heading-size-6 {
+    font-size: 2.2rem;
+    color: #6a6a6a;
+}
+
+.action-button {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #ff7473;
+    box-shadow: ;
+    padding: 2.2rem 4.0rem;
+}
+
+.secondary-button {
+    color: #63b6f1;
+    background-color: #ffffff;
+    border: 3px solid #63b6f1;
+    padding: 1.4rem 3.2rem;
+}
+
+.secondary-button--small {
+    color: #63b6f1;
+    background-color: #ffffff;
+    border: 2px solid #63b6f1;
+    padding: 1.0rem 1.7rem 0.9rem 1.9rem;
+}
+
+.section--white {
+    background-color: #ffffff;
+}
+
+.section--grey {
+    background-color: #f3f3f3;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
 
 /* -------------------------------------------------------------------------- */
 
@@ -188,6 +264,9 @@ path {
 
 .header {
     background-color: #47b8e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header__company-info {
@@ -197,9 +276,27 @@ path {
 }
 
 .header__white-text {
-    font-size: 20px;
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 700;
 }
 
 .header__black-text {
-    font-size: 10px;
+    color: #000000;
+    font-size: 1.2rem;
+}
+
+.header-slogan-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 9.8rem 0 4.8rem;
+    text-align: center;
+}
+
+.header-slogan {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffc952;
+    border: 1px solid #ffffff;
 }
