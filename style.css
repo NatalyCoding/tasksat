@@ -1,0 +1,205 @@
+/*
+Theme Name: TaskSat
+Text Domain: tasksat
+Version: 1.0
+Requires at least: 4.7
+Requires PHP: 5.2.4
+Description: Test Task for MagneticOne
+Tags: landing, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, sticky-menu, theme-options, accessibility-ready
+Author: Nataly Coding
+Author URI: https://natalycoding.com/
+Theme URI: https://wordpress.org/themes/tasksat/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned
+with others.
+*/
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+	0. 	CSS Reset
+	1. 	Document Setup
+	2. 	Element Base
+	3. 	Helper Classes
+  4. 	Site Header
+  
+
+/* -------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/*	0. CSS Reset
+/* -------------------------------------------------------------------------- */
+
+html,
+body {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+address,
+big,
+cite,
+code,
+em,
+font,
+img,
+small,
+strike,
+sub,
+sup,
+li,
+ol,
+ul,
+fieldset,
+form,
+label,
+legend,
+button,
+table,
+caption,
+tr,
+th,
+td {
+    border: none;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    text-align: inherit;
+}
+
+blockquote::before,
+blockquote::after {
+    content: "";
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/*	1. Document Setup
+/* -------------------------------------------------------------------------- */
+
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px */
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+body {
+    background: #ffffff;
+    box-sizing: border-box;
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    letter-spacing: 1;
+    text-align: left;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    -webkit-font-smoothing: antialiased;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+#site-content {
+    overflow: hidden;
+}
+
+.header-container {
+    max-width: 970px;
+}
+
+.content-container {
+    max-width: 960px;
+}
+
+
+/* Base Transitions -------------------------- */
+
+a,
+path {
+    transition: all 0.15s linear;
+}
+
+
+/* Fonts ------------------------------------- 
+
+@font-face {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300 400;
+    font-style: normal;
+    font-display: swap;
+    src: url(./assets/fonts/inter/Inter-upright-var.woff2) format("woff2");
+}  */
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/*	2. Element Base 
+/* -------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/*	3. Helper Classes
+/* -------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/*	4. Site Header
+/* -------------------------------------------------------------------------- */
+
+.header {
+    background-color: #47b8e0;
+}
+
+.header__company-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__white-text {
+    font-size: 20px;
+}
+
+.header__black-text {
+    font-size: 10px;
+}
