@@ -421,7 +421,7 @@ a:focus {
 }
 
 
-/*	4. Section Simple
+/*	6. Section Simple
 /* -------------------------------------------------------------------------- */
 
 .section-simple {
@@ -444,6 +444,7 @@ a:focus {
     width: 6.4rem;
     height: 6.4rem;
     margin-right: 1.4rem;
+    object-fit: cover;
 }
 
 .process-text {
@@ -459,10 +460,11 @@ a:focus {
     width: 6.8rem;
     height: 1.8rem;
     margin-right: 3.6rem;
+    object-fit: cover;
 }
 
 
-/*	4. Section Counter
+/*	7. Section Counter
 /* -------------------------------------------------------------------------- */
 
 .section-counter {
@@ -482,4 +484,80 @@ a:focus {
     background-color: #f3f3f3;
     border: 3px solid #d2d2d2;
     margin-left: 9rem;
+}
+
+
+/*	8. Section Reasons
+/* -------------------------------------------------------------------------- */
+
+.section-reasons {
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.reasons-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reasons-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.reasons-item:not(:last-child) {
+    max-width: 22rem;
+    margin-right: 5.7rem;
+}
+
+.reasons-item:last-child {
+    max-width: 24.5rem;
+}
+
+.reason-img {
+    width: 12.8rem;
+    height: 12.8rem;
+    margin-bottom: 3rem;
+}
+
+.reasons-heading {
+    line-height: 3rem;
+    margin-bottom: 1.8rem;
+}
+
+
+/*	8. Section Testimonials
+/* -------------------------------------------------------------------------- */
+
+.section-testomonials {
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.testimonials-inner {
+    max-width: 95.5rem;
+    padding: 2rem 0;
+    border-top: 1px solid #e0e0e0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.blockquotes-block {
+    display: flex;
+}
+
+.view-all {
+    color: #4dabed;
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 2.3rem;
+}
+
+.blockquotes-block {
+    display: flex;
+    padding: 2.3rem 0;
 }
