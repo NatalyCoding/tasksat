@@ -223,6 +223,10 @@ h6,
     border-radius: 2px;
 }
 
+.action-button:hover {
+    background-color: #eb4f4f;
+}
+
 .secondary-button {
     color: #63b6f1;
     background-color: #ffffff;
@@ -267,16 +271,13 @@ a:focus {
 
 .header {
     background-color: #47b8e0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding-bottom: 108px;
 }
 
 .header-container {
     max-width: 1000px;
     padding: 0 15px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .header__company-info {
@@ -327,7 +328,7 @@ a:focus {
 .header-slogan-wrapper {
     align-items: center;
     justify-content: center;
-    padding: 9.8rem 0 4.8rem;
+    padding: 9.8rem 0 12.8rem;
     text-align: center;
 }
 
@@ -336,4 +337,82 @@ a:focus {
     font-weight: 700;
     color: #ffffff;
     text-shadow: 1px 1px 1px #000;
+}
+
+.header-form {
+    padding-bottom: 4.8rem;
+}
+
+.custom-select select {
+    display: none;
+    /*hide original SELECT element:*/
+}
+
+.custom-select {
+    width: 265px;
+    height: 60px;
+    border: 2px solid #ff7473;
+    background-color: #ffffff;
+}
+
+.menu-wrapper {
+    background-color: #34314c;
+    padding: 4.0rem 0 4.3rem;
+}
+
+.menu-container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item {
+    padding-right: 5rem;
+    list-style: none;
+}
+
+.menu-list {
+    display: flex;
+}
+
+.menu-link {
+    color: #ffffff;
+}
+
+.menu-link:hover {
+    color: #63b6f1;
+}
+
+.login-action {
+    display: flex;
+    right: 0;
+    align-items: center;
+}
+
+.login {
+    color: #63b6f1;
+    margin-right: 5.5rem;
+}
+
+.getfree {
+    color: #ff7473;
+    font-weight: 700;
+    background-color: #ffffff;
+    padding: 1.5rem 1rem 1.3rem;
+}
+
+.getfree:hover,
+.getfree:focus {
+    background-color: #eb4f4f;
+    color: #ffffff;
 }
