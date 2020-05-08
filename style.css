@@ -1,4 +1,4 @@
-/*
+    /*
 Theme Name: TaskSat
 Text Domain: tasksat
 Version: 1.0
@@ -19,9 +19,7 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned
 with others.
 */
-
-
-/*--------------------------------------------------------------
+    /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 
@@ -29,535 +27,584 @@ with others.
 	1. 	Document Setup
 	2. 	Element Base
 	3. 	Helper Classes
-  4. 	Site Header
-  5.  Menu
-  6.  Its simple section
+    4. 	Site Header
+    5.  Menu
+    6.  Section It's Simple
+    7.  Section Counter
+    8.  Section Reasons
+    9.  Section Testimonials
+    10. Section News
+
   
 
 /* -------------------------------------------------------------------------- */
-
-
+    /* -------------------------------------------------------------------------- */
+    /*	0. CSS Reset
 /* -------------------------------------------------------------------------- */
-
-
-/*	0. CSS Reset
-/* -------------------------------------------------------------------------- */
-
-html,
-body {
-    border: none;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-address,
-big,
-cite,
-code,
-em,
-font,
-img,
-small,
-li,
-ol,
-ul,
-fieldset,
-form,
-label,
-legend,
-button,
-table,
-caption,
-tr,
-th,
-td {
-    border: none;
-    font-size: inherit;
-    line-height: inherit;
-    margin: 0;
-    padding: 0;
-    text-align: inherit;
-}
-
-blockquote::before,
-blockquote::after {
-    content: "";
-}
-
-
-/* -------------------------------------------------------------------------- */
-
-
-/*	1. Document Setup
-/* -------------------------------------------------------------------------- */
-
-html {
-    font-size: 62.5%;
-    /* 1rem = 10px */
-    scroll-behavior: smooth;
-}
-
-@media (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: auto;
+    
+    html,
+    body {
+        border: none;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
-}
-
-body {
-    background: #ffffff;
-    box-sizing: border-box;
-    color: #000;
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.6rem;
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-    letter-spacing: 1;
-    text-align: left;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-    -webkit-font-smoothing: antialiased;
-    word-break: break-word;
-    word-wrap: break-word;
-}
-
-#site-content {
-    overflow: hidden;
-}
-
-.header-container {
-    max-width: 100rem;
-    padding: 0 1.5rem;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.content-container {
-    max-width: 990rem;
-    padding: 0 1.5rem;
-}
-
-
-/* Base Transitions -------------------------- */
-
-a,
-path {
-    transition: all 0.15s linear;
-}
-
-
-/* Fonts ------------------------------------- 
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    address,
+    big,
+    cite,
+    code,
+    em,
+    font,
+    img,
+    small,
+    li,
+    ol,
+    ul,
+    fieldset,
+    form,
+    label,
+    legend,
+    button,
+    table,
+    caption,
+    tr,
+    th,
+    td {
+        border: none;
+        font-size: inherit;
+        line-height: inherit;
+        margin: 0;
+        padding: 0;
+        text-align: inherit;
+    }
+    
+    blockquote::before,
+    blockquote::after {
+        content: "";
+    }
+    /* -------------------------------------------------------------------------- */
+    /*	1. Document Setup
+    /* -------------------------------------------------------------------------- */
+    
+    html {
+        font-size: 62.5%;
+        /* 1rem = 10px */
+        scroll-behavior: smooth;
+    }
+    
+    @media (prefers-reduced-motion: reduce) {
+        html {
+            scroll-behavior: auto;
+        }
+    }
+    
+    body {
+        background: #ffffff;
+        box-sizing: border-box;
+        color: #000;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+        letter-spacing: 1;
+        text-align: left;
+    }
+    
+    *,
+    *::before,
+    *::after {
+        box-sizing: inherit;
+        -webkit-font-smoothing: antialiased;
+        word-break: break-word;
+        word-wrap: break-word;
+    }
+    
+    #site-content {
+        overflow: hidden;
+    }
+    
+    .header-container {
+        max-width: 100rem;
+        padding: 0 1.5rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .content-container {
+        max-width: 990rem;
+        padding: 0 1.5rem;
+    }
+    /* Base Transitions -------------------------- */
+    
+    a,
+    path {
+        transition: all 0.15s linear;
+    }
+    /* Fonts ------------------------------------- 
 
 @font-face {
     font-family: "Open Sans", sans-serif;
     font-weight: 300 400;
     font-style: normal;
     font-display: swap;
-    src: url(./assets/fonts/inter/Inter-upright-var.woff2) format("woff2");
+    src: url(./assets/fonts/opensans.woff2) format("woff2");
 }  */
-
-
+    /* -------------------------------------------------------------------------- */
+    /*	2. Element Base 
 /* -------------------------------------------------------------------------- */
-
-
-/*	2. Element Base 
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .big-text {
+        font-weight: 300;
+    }
+    
+    h2,
+    .heading-size-2 {
+        font-size: 4.2rem;
+        color: #4a4946;
+    }
+    
+    h3,
+    .heading-size-3 {
+        font-size: 3.8rem;
+        color: #4f4f4f;
+    }
+    
+    h4,
+    .heading-size-4 {
+        font-size: 3.6rem;
+        color: #4f4f4f;
+    }
+    
+    h5,
+    .heading-size-5 {
+        font-size: 2.4rem;
+        color: #4f4f4f;
+    }
+    
+    h6,
+    .heading-size-6 {
+        font-size: 2.2rem;
+        color: #6a6a6a;
+    }
+    
+    .button-action {
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 1;
+        color: #ffffff;
+        background-color: #ff7473;
+        box-shadow: 0 1px 0 rgba(136, 136, 136, 0.5);
+        padding: 2.1rem 3.8rem;
+        border-radius: 2px;
+    }
+    
+    .button-action:hover {
+        background-color: #eb4f4f;
+    }
+    
+    .button-secondary {
+        color: #63b6f1;
+        background-color: #ffffff;
+        border: 3px solid #63b6f1;
+        padding: 1.4rem 3.2rem;
+        font-size: 1.7rem;
+        font-weight: 700;
+    }
+    
+    .button-secondary--small {
+        color: #63b6f1;
+        background-color: #f3f3f3;
+        border: 2px solid #63b6f1;
+        padding: 1.0rem 1.7rem 0.9rem 1.9rem;
+        text-transform: capitalize;
+    }
+    
+    .section-white {
+        background-color: #ffffff;
+    }
+    
+    .section-grey {
+        background-color: #f3f3f3;
+    }
+    
+    a,
+    a:hover,
+    a:focus {
+        text-decoration: none;
+    }
+    /* -------------------------------------------------------------------------- */
+    /*	3. Helper Classes
 /* -------------------------------------------------------------------------- */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.big-text {
-    font-weight: 300;
-}
-
-h2,
-.heading-size-2 {
-    font-size: 4.2rem;
-    color: #4a4946;
-}
-
-h3,
-.heading-size-3 {
-    font-size: 3.8rem;
-    color: #4f4f4f;
-}
-
-h4,
-.heading-size-4 {
-    font-size: 3.6rem;
-    color: #4f4f4f;
-}
-
-h5,
-.heading-size-5 {
-    font-size: 2.4rem;
-    color: #4f4f4f;
-}
-
-h6,
-.heading-size-6 {
-    font-size: 2.2rem;
-    color: #6a6a6a;
-}
-
-.button-action {
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 1;
-    color: #ffffff;
-    background-color: #ff7473;
-    box-shadow: 0 1px 0 rgba(136, 136, 136, 0.5);
-    padding: 2.1rem 3.8rem;
-    border-radius: 2px;
-}
-
-.button-action:hover {
-    background-color: #eb4f4f;
-}
-
-.button-secondary {
-    color: #63b6f1;
-    background-color: #ffffff;
-    border: 3px solid #63b6f1;
-    padding: 1.4rem 3.2rem;
-    font-size: 1.7rem;
-    font-weight: 700;
-}
-
-.button-secondary--small {
-    color: #63b6f1;
-    background-color: #ffffff;
-    border: 2px solid #63b6f1;
-    padding: 1.0rem 1.7rem 0.9rem 1.9rem;
-}
-
-.section-white {
-    background-color: #ffffff;
-}
-
-.section-grey {
-    background-color: #f3f3f3;
-}
-
-a,
-a:hover,
-a:focus {
-    text-decoration: none;
-}
-
-
+    /* -------------------------------------------------------------------------- */
+    /*	4. Site Header
 /* -------------------------------------------------------------------------- */
-
-
-/*	3. Helper Classes
+    
+    .header {
+        background-color: #47b8e0;
+    }
+    
+    .header__company-info {
+        max-width: 970px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 40px;
+    }
+    
+    .header__contacts {
+        display: flex;
+    }
+    
+    .header__phone,
+    .header__chat {
+        display: flex;
+        align-items: center;
+    }
+    
+    .header__phone {
+        padding-right: 85px;
+    }
+    
+    .phone-icon {
+        height: 26px;
+        padding-right: 10px;
+    }
+    
+    .chat-icon {
+        height: 29px;
+        padding-right: 10px;
+    }
+    
+    .header__white-text {
+        color: #ffffff;
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-align: left;
+    }
+    
+    .header__black-text {
+        color: #000000;
+        font-size: 1.2rem;
+        text-align: left;
+    }
+    
+    .header-slogan-wrapper {
+        align-items: center;
+        justify-content: center;
+        padding: 9.8rem 0 12.8rem;
+        text-align: center;
+    }
+    
+    .header-slogan {
+        font-size: 36px;
+        font-weight: 700;
+        color: #ffffff;
+        text-shadow: 1px 1px 1px #000;
+    }
+    
+    .header-form {
+        padding-bottom: 4.8rem;
+    }
+    
+    .custom-select select {
+        display: none;
+        /*hide original SELECT element:*/
+    }
+    
+    .custom-select {
+        width: 265px;
+        height: 60px;
+        border: 2px solid #ff7473;
+        background-color: #ffffff;
+    }
+    /*	5. Menu
 /* -------------------------------------------------------------------------- */
-
-
+    
+    .menu-wrapper {
+        background-color: #34314c;
+        padding: 4.0rem 0 4.3rem;
+    }
+    
+    .menu-container {
+        max-width: 960px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .menu {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 300;
+        display: flex;
+        align-items: center;
+    }
+    
+    .menu-item {
+        padding-right: 5rem;
+        list-style: none;
+    }
+    
+    .menu-list {
+        display: flex;
+    }
+    
+    .menu-link {
+        color: #ffffff;
+    }
+    
+    .menu-link:hover {
+        color: #63b6f1;
+    }
+    
+    .login-action {
+        display: flex;
+        right: 0;
+        align-items: center;
+    }
+    
+    .login {
+        color: #63b6f1;
+        margin-right: 5.5rem;
+    }
+    
+    .getfree {
+        color: #ff7473;
+        font-weight: 700;
+        background-color: #ffffff;
+        padding: 1.5rem 1rem 1.3rem;
+    }
+    
+    .getfree:hover,
+    .getfree:focus {
+        background-color: #eb4f4f;
+        color: #ffffff;
+    }
+    /*	6. Section Simple
 /* -------------------------------------------------------------------------- */
-
-
-/*	4. Site Header
+    
+    .section-simple {
+        padding: 6.7rem 0 4.7rem;
+        text-align: center;
+    }
+    
+    .heading-simple {
+        margin-bottom: 5rem;
+    }
+    
+    .simple-process {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 6.7rem;
+    }
+    
+    .process-icon {
+        width: 6.4rem;
+        height: 6.4rem;
+        margin-right: 1.4rem;
+        object-fit: cover;
+    }
+    
+    .process-text {
+        width: 126px;
+        height: 32px;
+        color: #6a6a6a;
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin-right: 2.6rem;
+    }
+    
+    .arrow-icon {
+        width: 6.8rem;
+        height: 1.8rem;
+        margin-right: 3.6rem;
+        object-fit: cover;
+    }
+    /*	7. Section Counter
 /* -------------------------------------------------------------------------- */
-
-.header {
-    background-color: #47b8e0;
-}
-
-.header__company-info {
-    max-width: 970px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 40px;
-}
-
-.header__contacts {
-    display: flex;
-}
-
-.header__phone,
-.header__chat {
-    display: flex;
-    align-items: center;
-}
-
-.header__phone {
-    padding-right: 85px;
-}
-
-.phone-icon {
-    height: 26px;
-    padding-right: 10px;
-}
-
-.chat-icon {
-    height: 29px;
-    padding-right: 10px;
-}
-
-.header__white-text {
-    color: #ffffff;
-    font-size: 1.8rem;
-    font-weight: 700;
-    text-align: left;
-}
-
-.header__black-text {
-    color: #000000;
-    font-size: 1.2rem;
-    text-align: left;
-}
-
-.header-slogan-wrapper {
-    align-items: center;
-    justify-content: center;
-    padding: 9.8rem 0 12.8rem;
-    text-align: center;
-}
-
-.header-slogan {
-    font-size: 36px;
-    font-weight: 700;
-    color: #ffffff;
-    text-shadow: 1px 1px 1px #000;
-}
-
-.header-form {
-    padding-bottom: 4.8rem;
-}
-
-.custom-select select {
-    display: none;
-    /*hide original SELECT element:*/
-}
-
-.custom-select {
-    width: 265px;
-    height: 60px;
-    border: 2px solid #ff7473;
-    background-color: #ffffff;
-}
-
-
-/*	5. Menu
+    
+    .section-counter {
+        padding: 4.4rem 0 4.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .counter {
+        font-size: 3.6rem;
+        margin-right: 3.5rem;
+    }
+    
+    .button-counter {
+        color: #999898;
+        background-color: #f3f3f3;
+        border: 3px solid #d2d2d2;
+        margin-left: 9rem;
+    }
+    /*	8. Section Reasons
 /* -------------------------------------------------------------------------- */
-
-.menu-wrapper {
-    background-color: #34314c;
-    padding: 4.0rem 0 4.3rem;
-}
-
-.menu-container {
-    max-width: 960px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.menu {
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 300;
-    display: flex;
-    align-items: center;
-}
-
-.menu-item {
-    padding-right: 5rem;
-    list-style: none;
-}
-
-.menu-list {
-    display: flex;
-}
-
-.menu-link {
-    color: #ffffff;
-}
-
-.menu-link:hover {
-    color: #63b6f1;
-}
-
-.login-action {
-    display: flex;
-    right: 0;
-    align-items: center;
-}
-
-.login {
-    color: #63b6f1;
-    margin-right: 5.5rem;
-}
-
-.getfree {
-    color: #ff7473;
-    font-weight: 700;
-    background-color: #ffffff;
-    padding: 1.5rem 1rem 1.3rem;
-}
-
-.getfree:hover,
-.getfree:focus {
-    background-color: #eb4f4f;
-    color: #ffffff;
-}
-
-
-/*	6. Section Simple
-/* -------------------------------------------------------------------------- */
-
-.section-simple {
-    padding: 6.7rem 0 4.7rem;
-    text-align: center;
-}
-
-.heading-simple {
-    margin-bottom: 5rem;
-}
-
-.simple-process {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 6.7rem;
-}
-
-.process-icon {
-    width: 6.4rem;
-    height: 6.4rem;
-    margin-right: 1.4rem;
-    object-fit: cover;
-}
-
-.process-text {
-    width: 126px;
-    height: 32px;
-    color: #6a6a6a;
-    font-size: 1.6rem;
-    font-weight: 400;
-    margin-right: 2.6rem;
-}
-
-.arrow-icon {
-    width: 6.8rem;
-    height: 1.8rem;
-    margin-right: 3.6rem;
-    object-fit: cover;
-}
-
-
-/*	7. Section Counter
-/* -------------------------------------------------------------------------- */
-
-.section-counter {
-    padding: 4.4rem 0 4.8rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.counter {
-    font-size: 3.6rem;
-    margin-right: 3.5rem;
-}
-
-.button-counter {
-    color: #999898;
-    background-color: #f3f3f3;
-    border: 3px solid #d2d2d2;
-    margin-left: 9rem;
-}
-
-
-/*	8. Section Reasons
-/* -------------------------------------------------------------------------- */
-
-.section-reasons {
-    padding: 6rem 0;
-    text-align: center;
-}
-
-.reasons-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.reasons-item {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 6rem;
-    justify-content: center;
-    align-items: center;
-}
-
-.reasons-item:not(:last-child) {
-    max-width: 22rem;
-    margin-right: 5.7rem;
-}
-
-.reasons-item:last-child {
-    max-width: 24.5rem;
-}
-
-.reason-img {
-    width: 12.8rem;
-    height: 12.8rem;
-    margin-bottom: 3rem;
-}
-
-.reasons-heading {
-    line-height: 3rem;
-    margin-bottom: 1.8rem;
-}
-
-
-/*	8. Section Testimonials
-/* -------------------------------------------------------------------------- */
-
-.section-testomonials {
-    padding: 6rem 0;
-    text-align: center;
-}
-
-.testimonials-inner {
-    max-width: 95.5rem;
-    padding: 2rem 0;
-    border-top: 1px solid #e0e0e0;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.blockquotes-block {
-    display: flex;
-}
-
-.view-all {
-    color: #4dabed;
-    font-size: 1.4rem;
-    font-weight: 300;
-    margin-bottom: 2.3rem;
-}
-
-.blockquotes-block {
-    display: flex;
-    padding: 2.3rem 0;
-}
+    
+    .section-reasons {
+        padding: 6rem 0;
+        text-align: center;
+    }
+    
+    .reasons-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .reasons-item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 6rem;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .reasons-item:not(:last-child) {
+        max-width: 22rem;
+        margin-right: 5.7rem;
+    }
+    
+    .reasons-item:last-child {
+        max-width: 24.5rem;
+    }
+    
+    .reason-img {
+        width: 12.8rem;
+        height: 12.8rem;
+        margin-bottom: 3rem;
+    }
+    
+    .reasons-heading {
+        line-height: 3rem;
+        margin-bottom: 1.8rem;
+    }
+    /*	9. Section Testimonials
+    /* -------------------------------------------------------------------------- */
+    
+    .section-testomonials {
+        padding: 6rem 0;
+        text-align: center;
+    }
+    
+    .testimonials-inner {
+        max-width: 95.5rem;
+        padding: 2rem 0;
+        border-top: 1px solid #e0e0e0;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .blockquotes-block {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .view-all {
+        color: #4dabed;
+        font-size: 1.4rem;
+        font-weight: 300;
+        margin-bottom: 2.3rem;
+    }
+    
+    .blockquotes-block {
+        display: flex;
+        padding: 2.3rem 0 6rem;
+    }
+    /*	10. Section News
+    /* -------------------------------------------------------------------------- */
+    
+    .section-news {
+        padding: 3.6rem 2.6rem;
+        text-align: center;
+    }
+    
+    .news-heading {
+        margin-bottom: 5rem;
+    }
+    
+    .blogposts-block {
+        display: flex;
+        max-width: 87.5rem;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    
+    .blogspot-heading {
+        display: flex;
+    }
+    
+    .blogpost {
+        max-width: 390px;
+        text-align: left;
+    }
+    
+    .time-box {
+        color: #63b6f1;
+        font-weight: 300;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 7.5rem;
+        height: 4.2rem;
+        margin-right: 1.7rem;
+    }
+    
+    .time-box__date {
+        font-size: 2.8rem;
+        width: 7.5rem;
+    }
+    
+    .time-box__year {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    
+    .blogpost-title {
+        word-break: break-all;
+        margin-bottom: 3.2rem;
+    }
+    
+    .button-blog-wrapper {
+        display: flex;
+        justify-content: flex-end;
+    }
+    /* -------------------------------------------------------------------------- */
+    /*	11. Section Demo
+    /* -------------------------------------------------------------------------- */
+    
+    .section-demo {
+        padding: 4.1rem 4.6rem;
+        text-align: center;
+    }
+    
+    .heading-demo {
+        color: #4f4f4f;
+        margin-bottom: 2.5rem;
+    }
+    
+    .button-wrapper {
+        padding-top: 2.5rem;
+        margin-bottom: 4.6rem;
+    }
