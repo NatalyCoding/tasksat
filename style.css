@@ -34,6 +34,10 @@ with others.
     8.  Section Reasons
     9.  Section Testimonials
     10. Section News
+    11. Section Demo
+    12. Section Subscribe
+    13. Footer
+    14. Media Queries
 
   
 
@@ -310,6 +314,7 @@ with others.
         justify-content: center;
         padding: 9.8rem 0 12.8rem;
         text-align: center;
+        margin: 0 auto;
     }
     
     .header-slogan {
@@ -346,6 +351,7 @@ with others.
         max-width: 96rem;
         margin: 0 auto;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
     }
@@ -355,6 +361,7 @@ with others.
         font-size: 1.8rem;
         font-weight: 300;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
     }
     
@@ -443,15 +450,17 @@ with others.
 /* -------------------------------------------------------------------------- */
     
     .section-counter {
-        padding: 4.4rem 0 4.8rem;
+        padding: 4.4rem 1.5rem 4.8rem;
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
     }
     
     .counter {
         display: flex;
         margin-right: 3.5rem;
+        margin-bottom: 3rem;
     }
     
     .counter-number {
@@ -490,6 +499,7 @@ with others.
         display: flex;
         justify-content: center;
         align-items: baseline;
+        flex-wrap: wrap;
     }
     
     .reasons-item {
@@ -573,6 +583,7 @@ with others.
         max-width: 87.5rem;
         justify-content: space-between;
         margin: 0 auto;
+        flex-wrap: wrap;
     }
     
     .blogspot-heading {
@@ -716,4 +727,135 @@ with others.
     .button-subscribe {
         padding: 1rem 3rem;
         margin-bottom: 1.4rem;
+    }
+    /* -------------------------------------------------------------------------- */
+    /*	11. Footer
+    /* -------------------------------------------------------------------------- */
+    /* -------------------------------------------------------------------------- */
+    /*	11. Media Queries
+    /* -------------------------------------------------------------------------- */
+    
+    @media (max-width: 900px) {
+        .header-phone {
+            margin-right: 4.5rem;
+        }
+        .header-slogan-wrapper {
+            max-width: 60rem;
+        }
+        .button-action {
+            padding: 1.7rem 3.5rem;
+        }
+        .simple-process {
+            flex-wrap: wrap;
+            max-width: 67rem;
+        }
+        .blogpost {
+            padding: 0 2rem;
+        }
+        .form-row {
+            flex-direction: column;
+        }
+        .form-input,
+        .software-select {
+            width: 100%;
+        }
+    }
+    
+    @media (max-width: 670px) {
+        .header__company-info {
+            flex-direction: column;
+        }
+        .header-logo {
+            margin-bottom: 2rem;
+        }
+        .menu-container {
+            flex-direction: column;
+        }
+        .simple-process {
+            flex-direction: column;
+        }
+        .arrow-icon {
+            display: none;
+        }
+        .process-icon {
+            margin-right: 0;
+            margin-bottom: 1.2rem;
+        }
+        .process-text {
+            margin-bottom: 3rem;
+            margin-right: 0;
+        }
+        .section-counter {
+            flex-direction: column;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .counter {
+            margin-right: 0;
+        }
+        .button-counter {
+            margin-left: 0;
+        }
+        .blogposts-block {
+            flex-direction: column;
+        }
+        .blockpost {
+            margin-bottom: 4rem;
+            max-width: 640px;
+        }
+        .blockpost-text {
+            margin-bottom: 2rem;
+        }
+    }
+    
+    @media (max-width: 600px) {
+        .header-contacts {
+            flex-direction: column;
+            font-size: 1.4rem;
+        }
+        .header-logo,
+        .header-phone {
+            margin-bottom: 3rem;
+        }
+        .header-slogan-wrapper {
+            width: 80%;
+        }
+        .menu-list,
+        .login-action {
+            flex-direction: column;
+            font-size: 2.4rem;
+        }
+        .menu-link img {
+            display: none;
+        }
+        .getfree {
+            margin-top: 3rem;
+            padding: 1.5rem 5rem 1.4rem;
+        }
+        .login {
+            margin-right: 0;
+        }
+        .reason-heading,
+        .reason-text {
+            text-align: center;
+        }
+    }
+    
+    @media (max-width: 400px) {
+        .section-subscribe__img {
+            display: none;
+        }
+        .button-action {
+            font-size: 2.4rem;
+        }
+    }
+    
+    @media (max-width: 350px) {
+        .custom-select {
+            width: 24rem;
+        }
+        .button-action {
+            font-size: 2.2rem;
+            padding: 1.4rem 3.2rem;
+        }
     }
