@@ -696,6 +696,12 @@ with others.
         margin-bottom: 1.2rem;
     }
     
+    .form-input[placeholder] {
+        color: #c0c5c6;
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+    
     .software-select {
         color: #262626;
         font-weight: 700;
@@ -703,7 +709,7 @@ with others.
         width: 18.7rem;
     }
     
-    .software-select>option {
+    .software-select option {
         text-align: center;
     }
     
