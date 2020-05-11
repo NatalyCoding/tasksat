@@ -261,11 +261,11 @@ with others.
     }
     
     .header__company-info {
-        max-width: 970px;
+        max-width: 97rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 40px;
+        padding-top: 4rem;
     }
     
     .header__contacts {
@@ -279,17 +279,17 @@ with others.
     }
     
     .header__phone {
-        padding-right: 85px;
+        padding-right: 8.5rem;
     }
     
     .phone-icon {
-        height: 26px;
-        padding-right: 10px;
+        height: 2.6remx;
+        padding-right: 1rem;
     }
     
     .chat-icon {
-        height: 29px;
-        padding-right: 10px;
+        height: 2.9rem;
+        padding-right: 1rem;
     }
     
     .header__white-text {
@@ -425,8 +425,8 @@ with others.
     }
     
     .process-text {
-        width: 126px;
-        height: 32px;
+        width: 12.6rem;
+        height: 3.2rem;
         color: #6a6a6a;
         font-size: 1.6rem;
         font-weight: 400;
@@ -455,7 +455,7 @@ with others.
     }
     
     .counter-number {
-        font-size: 42px;
+        font-size: 4.2rem;
         font-weight: 400;
         color: #404040;
         background: #ffffff;
@@ -482,10 +482,14 @@ with others.
         text-align: center;
     }
     
+    .heading-reasons {
+        margin-bottom: 6.6rem;
+    }
+    
     .reasons-list {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: baseline;
     }
     
     .reasons-item {
@@ -514,6 +518,11 @@ with others.
     .reason-heading {
         line-height: 3rem;
         margin-bottom: 1.8rem;
+        text-align: left;
+    }
+    
+    .reason-text {
+        text-align: left;
     }
     /*	9. Section Testimonials
     /* -------------------------------------------------------------------------- */
