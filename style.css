@@ -421,7 +421,7 @@ with others.
         width: 6.4rem;
         height: 6.4rem;
         margin-right: 1.4rem;
-        object-fit: cover;
+        object-fit: contain;
     }
     
     .process-text {
@@ -511,7 +511,7 @@ with others.
         margin-bottom: 3rem;
     }
     
-    .reasons-heading {
+    .reason-heading {
         line-height: 3rem;
         margin-bottom: 1.8rem;
     }
@@ -597,8 +597,16 @@ with others.
     }
     
     .blogpost-title {
-        word-break: break-all;
+        word-wrap: break-word;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
         margin-bottom: 3.2rem;
+    }
+    
+    .blogpost-text {
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     
     .button-blog-wrapper {
@@ -637,7 +645,6 @@ with others.
         background-repeat: no-repeat;
         background-position: center;
         width: 31.1rem;
-        height: 27.7rem;
         margin-right: 1.2rem;
     }
     
@@ -687,6 +694,11 @@ with others.
         width: 18.7rem;
     }
     
+    .software-select>option {
+        text-align: center;
+    }
+    
     .button-subscribe {
         padding: 1rem 3rem;
+        margin-bottom: 1.4rem;
     }
