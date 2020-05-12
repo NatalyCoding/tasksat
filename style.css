@@ -749,8 +749,17 @@ with others.
             flex-wrap: wrap;
             max-width: 67rem;
         }
+        .blogposts-block {
+            flex-direction: column;
+            max-width: 100%;
+            align-items: center;
+        }
         .blogpost {
+            margin-bottom: 4rem;
             padding: 0 2rem;
+        }
+        .blogpost-text {
+            margin-bottom: 2rem;
         }
         .form-row {
             flex-direction: column;
@@ -795,16 +804,6 @@ with others.
         }
         .button-counter {
             margin-left: 0;
-        }
-        .blogposts-block {
-            flex-direction: column;
-        }
-        .blockpost {
-            margin-bottom: 4rem;
-            max-width: 640px;
-        }
-        .blockpost-text {
-            margin-bottom: 2rem;
         }
     }
     
