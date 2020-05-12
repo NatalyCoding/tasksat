@@ -741,7 +741,7 @@ with others.
     
     @media (max-width: 900px) {
         .header__phone {
-            margin-right: 4.5rem;
+            padding-right: 4.5rem;
         }
         .header-slogan-wrapper {
             max-width: 60rem;
@@ -789,7 +789,7 @@ with others.
         .header__company-info {
             flex-direction: column;
         }
-        .header-logo {
+        .header__logo {
             margin-bottom: 2rem;
         }
         .simple-process {
@@ -824,12 +824,13 @@ with others.
             flex-direction: column;
             font-size: 1.4rem;
         }
-        .header-logo,
-        .header-phone {
+        .header__logo,
+        .header__phone {
             margin-bottom: 3rem;
         }
-        .header-slogan-wrapper {
-            width: 80%;
+        .header__phone {
+            padding-right: 0;
+            justify-content: center;
         }
         .menu-list,
         .login-action {
