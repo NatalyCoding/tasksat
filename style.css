@@ -477,6 +477,10 @@ with others.
         margin-right: 0.4rem;
     }
     
+    .heading-counter {
+        margin-bottom: 3rem;
+    }
+    
     .button-counter {
         color: #999898;
         background-color: #f3f3f3;
