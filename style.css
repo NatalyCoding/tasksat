@@ -656,7 +656,7 @@ with others.
         margin-bottom: 4.6rem;
     }
     /* -------------------------------------------------------------------------- */
-    /*	11. Section Subscribe
+    /*	12. Section Subscribe
     /* -------------------------------------------------------------------------- */
     
     .section-subscribe {
@@ -733,10 +733,71 @@ with others.
         margin-bottom: 1.4rem;
     }
     /* -------------------------------------------------------------------------- */
-    /*	11. Footer
+    /*	13. Footer
     /* -------------------------------------------------------------------------- */
+    
+    .footer {
+        background-color: #2a2f38;
+        color: #5a5d6c;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+    
+    .footer__columns-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 4rem 0 6rem;
+        border-bottom: 1px solid #5a5d6c;
+    }
+    
+    .footer__column-header {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    
+    .footer__list-item {
+        list-style: none;
+    }
+    
+    .footer__list-link {
+        color: #5a5d6c;
+    }
+    
+    .footer__list-link:hover {
+        color: #ffffff;
+    }
+    
+    .social-icons-list {
+        display: flex;
+    }
+    
+    .social-icon-item {
+        list-style: none;
+    }
+    
+    .footer__contacts-wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .footer__phone {
+        color: #ffffff;
+    }
+    
+    .footer__email a {
+        color: #5a5d6c;
+    }
+    
+    .footer__copyrite {
+        padding: 2rem;
+        text-align: center;
+    }
     /* -------------------------------------------------------------------------- */
-    /*	11. Media Queries
+    /*	14. Media Queries
     /* -------------------------------------------------------------------------- */
     
     @media (max-width: 900px) {
