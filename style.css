@@ -328,6 +328,12 @@ with others.
         padding-bottom: 4.8rem;
     }
     
+    .header-form option {
+        color: #000;
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+    
     .custom-select select {
         display: none;
         /*hide original SELECT element:*/
@@ -338,6 +344,12 @@ with others.
         height: 6.0rem;
         border: 2px solid #ff7473;
         background-color: #ffffff;
+    }
+    
+    .custom-select {
+        color: #000;
+        font-size: 1.6rem;
+        font-weight: 400;
     }
     /*	5. Menu
 /* -------------------------------------------------------------------------- */
