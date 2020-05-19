@@ -750,6 +750,7 @@ with others.
         align-items: flex-start;
         padding: 4rem 0 6rem;
         border-bottom: 1px solid #5a5d6c;
+        flex-wrap: wrap;
     }
     
     .footer__column-header {
@@ -877,6 +878,12 @@ with others.
         }
         .button-counter {
             margin-left: 0;
+        }
+        .footer__columns-wrapper {
+            justify-content: space-around;
+        }
+        .footer__column-header {
+            padding-top: 2rem;
         }
     }
     
